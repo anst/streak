@@ -1,1 +1,2 @@
-Ember - a blog framework inspired by Toto.
+Streak - a blog framework inspired by Toto.
+------------
