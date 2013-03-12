@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title><?=$streak_blog_name?></title>
+        <title><?php echo $streak_blog_name;?></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <link href='http://fonts.googleapis.com/css?family=Lato:200,300,400,700' rel='stylesheet' type='text/css'>
@@ -15,11 +15,11 @@
     <body>
         <div class="container">
         	<div class="header">
-        		<a style="text-decoration:none" href="<?echo $streak_url.$streak_url_prefix;?>"class="blog_title"><?=$streak_blog_name?></a>
-        		<span class="blog_description"><?=$streak_blog_description?></span>
+        		<a style="text-decoration:none" href="<?php echo $streak_url.$streak_url_prefix;?>"class="blog_title"><?php echo $streak_blog_name;?></a>
+        		<span class="blog_description"><?php echo $streak_blog_description; ?></span>
         	</div>
         	<div class="content">
-        		<?
+        		<?php
         			foreach($posts as $post) {
         				echo "<div class='post'>";
         				echo "<span class='title'>";
@@ -37,7 +37,7 @@
         		?>
         	</div>
         	<div class="credits">
-        		&copy;  <? echo date("Y"); ?> <?=$streak_blog_name?>. Powered by <a href="http://nanocomet.github.com/streak">Streak</a>.
+        		&copy;  <?php echo date("Y"); ?> <?php echo $streak_blog_name;?>. Powered by <a href="http://nanocomet.github.com/streak">Streak</a>.
         		<!-- You don't have to keep "Powered by Streak", but I appreciate any sort of attribution! -->
         	</div>
         </div>
