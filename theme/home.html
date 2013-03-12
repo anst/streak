@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title><?=$streak_blog_name?></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link href='http://fonts.googleapis.com/css?family=Lato:200,300,400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="/theme/styles/main.css">
+    </head>
+    <body>
+        <div class="container">
+        	<div class="header">
+        		<a style="text-decoration:none" href="<?echo $streak_url.$streak_url_prefix;?>"class="blog_title"><?=$streak_blog_name?></a>
+        		<span class="blog_description"><?=$streak_blog_description?></span>
+        	</div>
+        	<div class="content">
+        		<?
+        			foreach($posts as $post) {
+        				echo "<div class='post'>";
+        				echo "<span class='title'>";
+        				echo $post["title"];
+        				echo "</span>";
+        				echo "<span class='date'>";
+        				echo $post["date"];
+        				echo "</span>";
+        				echo "<div class='post_content'>";
+        				echo $post["post_content"];
+        				echo '&nbsp;<a href="'.$post["link"].'">Continue Reading...</a>';
+        				echo "</div>";
+        				echo "</div>";
+        			}
+        		?>
+        	</div>
+        	<div class="credits">
+        		&copy;  <? echo date("Y"); ?> <?=$streak_blog_name?>. Powered by <a href="http://nanocomet.github.com/streak">Streak</a>.
+        		<!-- You don't have to keep "Powered by Streak", but I appreciate any sort of attribution! -->
+        	</div>
+        </div>
+    	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    </body>
+</html>

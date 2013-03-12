@@ -31,7 +31,7 @@ class Streak {
     public $cache;
     public $parent;
     public $prefix;
-    public $template_paths = array('./templates/');
+    public $template_paths = array('./theme/');
 
 
     public function __construct($name='default', $cache=False, $log=False) {
