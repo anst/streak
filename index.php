@@ -4,7 +4,6 @@ require dirname(__FILE__).'/system/ham.php';
 $streak = new streak('index');
 
 $streak->route('/', function($streak) {
-	require dirname(__FILE__).'/system/functions.php';
 	require dirname(__FILE__).'/system/markdown.php';
 	require dirname(__FILE__).'/system/config.php';
 	$posts = array_reverse(glob($streak_config["streak_post_directory"].'*.'.$streak_config["streak_post_extension"]));
@@ -33,7 +32,6 @@ $streak->route('/', function($streak) {
 	]);
 });
 $streak->route('/<int>/<int>/<int>/<string>', function($streak, $year,$month,$day,$slug) {
-	require dirname(__FILE__).'/system/functions.php';
 	require dirname(__FILE__).'/system/markdown.php';
 	require dirname(__FILE__).'/system/config.php';
 	$contents = @file_get_contents($streak_config["streak_post_directory"].$year.'-'.$month.'-'.$day.'-'.$slug.'.'.$streak_config["streak_post_extension"]);

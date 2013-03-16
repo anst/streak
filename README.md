@@ -1,8 +1,8 @@
-Streak - a blog framework inspired by Toto.
+Streak - a text-based blog microframework inspired by Toto.
 ------------------
 >**What is Streak?**   
->>Streak is a Blog microframework inspired by [Toto](http://github.com/cloudhead/toto).   
-  
+>>Streak is a text-based blog microframework inspired by [Toto](http://github.com/cloudhead/toto).   
+<img src="http://i2.minus.com/iTSHC16g6o8EE.png"/>
 > How do I use Streak?
 >> It's simple, all you need is PHP 5.3 and above! No other dependencies at all.   
 

@@ -2,8 +2,8 @@
 $streak_config = [
 	"streak_blog_author" => "streaker",
 	"streak_blog_name" => "Streak", //your awesome blog name
-    "streak_blog_description" => "A PHP blogging framework.", //your awesome blog description
-    "streak_url" => "http://streak.com/", //your awesome blog url (your root domain url)
+    "streak_blog_description" => "A text-based blog microframework.", //your awesome blog description
+    "streak_url" => "http://streak.io/", //your awesome blog url (your root domain url)
     "streak_url_prefix" => "", //your awesome blog prefix
     "streak_post_extension" => "md", //your awesome blog post extension
     "streak_post_directory" => "posts/", //your awesome blog post directory

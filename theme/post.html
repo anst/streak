@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title><echo $streak_blog_name?;></title>
+        <title><?php echo $streak_blog_name;?></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <link href='http://fonts.googleapis.com/css?family=Lato:200,300,400,700' rel='stylesheet' type='text/css'>
@@ -49,7 +49,7 @@
                     <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                 <?php } ?>
         	<div class="credits">
-        		&copy;  <?php echo date("Y"); ?> <echo $streak_blog_name?;>. Powered by <a href="http://nanocomet.github.com/streak">Streak</a>.
+        		&copy;  <?php echo date("Y"); ?> <?php echo $streak_blog_name;?>. Powered by <a href="http://nanocomet.github.com/streak">Streak</a>.
         		<!-- You don't have to keep "Powered by Streak", but I appreciate any sort of attribution! -->
         	</div>
         </div>
