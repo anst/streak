@@ -1,7 +1,7 @@
 Streak - a text-based blog microframework inspired by Toto.
 ------------------
 >**What is Streak?**   
->>Streak is a text-based blog microframework inspired by [Toto](http://github.com/cloudhead/toto).   
+>>Streak is a text-based blog microframework inspired by [Toto](http://github.com/cloudhead/toto). Now with 100% more caching!   
 <img src="http://i2.minus.com/iTSHC16g6o8EE.png"/>
 > How do I use Streak?
 >> It's simple, all you need is PHP 5.3 and above! No other dependencies at all.   
@@ -55,6 +55,9 @@ Introducting Streak, a blogging framework that uses text files and **markdown** 
 >>>* home.html - contains the homepage html template, you can edit everything but everything in the content div as those are key to Streak's functionality.     
 >>>* post.html - contains the post html template, style this as you wish, but again, avoid editing the content div unless you know what to do.  
 
+>**TODO**  
+* Implement sitemaps, for SEO purposes.
+* Upload to Bitbucket, jk.
 
 If you have any tips/suggestions/complaints/death threats leave them issues page and I'll answer them as quickly as possible.   
 Created overnight by nanocomet.

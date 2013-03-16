@@ -2,7 +2,7 @@
 require dirname(__FILE__).'/system/ham.php';
 
 $streak = new streak('index');
-
+$cache1 = streak::create_cache('default', True);
 $streak->route('/', function($streak) {
 	require dirname(__FILE__).'/system/markdown.php';
 	require dirname(__FILE__).'/system/config.php';
