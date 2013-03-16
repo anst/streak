@@ -59,5 +59,5 @@ Introducting Streak, a blogging framework that uses text files and **markdown** 
 * Implement sitemaps, for SEO purposes.
 * Upload to Bitbucket, jk.
 
-If you have any tips/suggestions/complaints/death threats leave them issues page and I'll answer them as quickly as possible.   
+If you have any tips/suggestions/complaints/death threats leave them on issues page and I'll answer them as quickly as possible.   
 Created overnight by nanocomet.
