@@ -6,7 +6,8 @@ $cache1 = streak::create_cache('default', True);
 $streak->route('/', function($streak) {
 	require dirname(__FILE__).'/system/markdown.php';
 	require dirname(__FILE__).'/system/config.php';
-	$posts = array_reverse(glob($streak_config["streak_post_directory"].'*.'.$streak_config["streak_post_extension"]));
+	$posts = glob($streak_config["streak_post_directory"].'*.'.$streak_config["streak_post_extension"]);
+	usort($posts, create_function('$a,$b', 'return -(filemtime($a) - filemtime($b));'));
 	$posts_detail = [];
 	foreach($posts as $post) {
 		$date = substr(basename($post, '.'.$streak_config['streak_post_extension']), 0,10);
@@ -63,7 +64,8 @@ $streak->route('/<int>/<int>/<int>/<string>', function($streak, $year,$month,$da
 $streak->route('/<int>/<int>/<int>/', function($streak, $year,$month,$day) {
 	require dirname(__FILE__).'/system/markdown.php';
 	require dirname(__FILE__).'/system/config.php';
-	$posts = array_reverse(glob($streak_config["streak_post_directory"].'*.'.$streak_config["streak_post_extension"]));
+	$posts = glob($streak_config["streak_post_directory"].'*.'.$streak_config["streak_post_extension"]);
+	usort($posts, create_function('$a,$b', 'return -(filemtime($a) - filemtime($b));'));
 	$posts_detail = [];
 	foreach($posts as $post) {
 		$date = substr(basename($post, '.'.$streak_config['streak_post_extension']), 0,10);
@@ -101,7 +103,8 @@ $streak->route('/<int>/<int>/<int>/', function($streak, $year,$month,$day) {
 $streak->route('/<int>/<int>/', function($streak, $year,$month) {
 	require dirname(__FILE__).'/system/markdown.php';
 	require dirname(__FILE__).'/system/config.php';
-	$posts = array_reverse(glob($streak_config["streak_post_directory"].'*.'.$streak_config["streak_post_extension"]));
+	$posts = glob($streak_config["streak_post_directory"].'*.'.$streak_config["streak_post_extension"]);
+	usort($posts, create_function('$a,$b', 'return -(filemtime($a) - filemtime($b));'));
 	$posts_detail = [];
 	foreach($posts as $post) {
 		$date = substr(basename($post, '.'.$streak_config['streak_post_extension']), 0,7);
@@ -140,7 +143,8 @@ $streak->route('/<int>/<int>/', function($streak, $year,$month) {
 $streak->route('/<int>/', function($streak, $year) {
 	require dirname(__FILE__).'/system/markdown.php';
 	require dirname(__FILE__).'/system/config.php';
-	$posts = array_reverse(glob($streak_config["streak_post_directory"].'*.'.$streak_config["streak_post_extension"]));
+	$posts = glob($streak_config["streak_post_directory"].'*.'.$streak_config["streak_post_extension"]);
+	usort($posts, create_function('$a,$b', 'return -(filemtime($a) - filemtime($b));'));
 	$posts_detail = [];
 	foreach($posts as $post) {
 		$date = substr(basename($post, '.'.$streak_config['streak_post_extension']), 0,4);

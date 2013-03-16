@@ -31,11 +31,12 @@ $streak_config = [
     "streak_enable_sitemap" => FALSE, //NOT IMPLEMENTED YET! do you want to enable automatic sitemap generation (works only when streak is placed in the root of your domain)
 ];
 ```  
->>Just simply edit what you'd like, mandatory options that need changing are ```phpstreak_url``` and ```php streak_url_prefix ```  
+>>Just simply edit what you'd like, mandatory options that need changing are ```streak_url``` and ```streak_url_prefix ```  
 >>Now that you have everything configured, navigate to your posts folder. You should find two posts, these are your sample posts!   
 >>To delete posts, simply remove the file! To add a post, run ```create_post.php``` from CLI or create a file using the following guidelines:    
 >>>The file name follows the following format ```YYYY-MM-DD-my-shot-slug-here.extension_i_specified_in_config```. See [XKCD](http://xkcd.com/1179/) for more info on date formatting. If the nomenclature does not follow these guidelines, you could possibly break Streak!   
->>>It is recommended that you use ```create_post.php``` instead of creating the post yourself.   
+>>>It is recommended that you use ```post_writer.php``` instead of creating the post yourself.   
+>>>>To use ```post_writer.php``` you simple open up Terminal/CMD (make sure you have your PHP path set) ```php post_writer.php``` and follow the instructions on the prompt! You must edit ```config.php``` before you can actually write posts.   
 >>>Inside the file, the first line is reserved for the title of your post, for example:   
 >>>```
 @My awesome title here!
